@@ -2,7 +2,6 @@
 <html>
 <!--Taken from https://github.com/FelixM-Infosec/StartPage and edited for my own use.-->
 	<title>Welcome Dylan</title>
-
 	<head>
 		<style>
 	body 	{ background-color: #222233}
@@ -25,16 +24,15 @@
 
 	<body>
 		<div id="title">
-		<center><h2>Welcome Dylan</h2></center>
-
-		<center>
-			<form action="https://www.duckduckgo.com/?q" class="searchform" method="get" name="searchform" target="_blank">
-				<input name="sitesearch" type="hidden" value="">
-				<input autocomplete="off" class="search" name="q" autofocus="autofocus" placeholder="Start Typing..." required="required" type="text">
-			</form>
-		</center>
-
+			<center><h2 id='display'>Welcome Dylan</h2></center>
+			<center>
+				<form action="https://www.duckduckgo.com/?q" class="searchform" method="get" name="searchform" target="_blank">
+					<input name="sitesearch" type="hidden" value="">
+					<input autocomplete="off" class="search" name="q" autofocus="autofocus" placeholder="Start Typing..." required="required" type="text">
+				</form>
+			</center>
 		</div>
+
 		<div id="wrapper">
 			<div id="Group">
 				<center><p>College</p></center>
@@ -93,6 +91,28 @@
 				<a href="https://file.pizza/">FilePizza</a><br>
 			</div>
 		</div>
-	</body>
 
+	</body>
+	<script>
+	window.onload = ( function() {
+		getDateTime();
+	})();
+
+	function getDateTime() {
+			var now = new Date();
+			var hour = now.getHours();
+			if(6 < hour && hour <= 10){
+					document.getElementById('display').innerHTML = "Good Morning";
+			}
+			else if(10 < hour && hour <= 16){
+					document.getElementById('display').innerHTML = "Good Day";
+			}
+			else if(16 < hour && hour <= 23){
+					document.getElementById('display').innerHTML = "Good Evening";
+			}
+			else {
+					document.getElementById('display').innerHTML = "Stop it! Get some sleep";
+			}
+	}
+	</script>
 </html>
