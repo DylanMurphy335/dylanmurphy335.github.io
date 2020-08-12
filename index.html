@@ -7,120 +7,20 @@
 <!--	Blog?-->
 <!DOCTYPE html>
 <html>
-<!--Taken from https://github.com/FelixM-Infosec/StartPage and edited for my own use.-->
-	<title>Welcome Dylan</title>
-	<head>
-		<style>
-	body 	{ background-color: #222233}
-			a 		{ color:white; font-family: Tahoma, Geneva, sans-serif; font-size:16px; padding-left:15px; text-decoration:none; }
-			h2 		{ color:white; font-family: Tahoma, Geneva, sans-serif; font-size:40px; padding-left:15px; }
-			h3 		{ color:white; font-family: Tahoma, Geneva, sans-serif; font-size:18px; padding-left:15px; }
-			p 		{ color:white; font-family: Tahoma, Geneva, sans-serif; font-size:20px; border:0px; }
-			hr		{ color:white; background-color:white; margin-right:10px; margin-left:10px; height:1px; border:none; }
-
-			::placeholder { color: white; opacity: 1; }
-			.search 	{ width:600px; height:24px; text-align:center; font-size:18px; color:transparent; background-color:transparent; text-shadow: 0 0 0 white; border: 1px solid white; }
-			.search:hover 	{ outline:none; }
-
-			#title 		{ position:center; margin-left:auto; margin-right:auto; width:624px; padding-bottom:12px; padding-top:80px; }
-			#wrapper 	{ position:center; margin-left:auto; margin-right:auto; width:624px; height:214px; }
-			#gap 		{ padding:6px; float:left; }
-			#Group 		{ width:200px; height:200px; float:left; background-color:transparent; }
-		</style>
-	</head>
-
-	<body>
-		<div id="title">
-			<center><h2 id='display'>Welcome Dylan</h2></center>
-			<center>
-				<form action="https://www.duckduckgo.com/?q" class="searchform" method="get" name="searchform" target="_blank">
-					<input name="sitesearch" type="hidden" value="">
-					<input autocomplete="off" class="search" name="q" autofocus="autofocus" placeholder="Search..." required="required" type="text">
-				</form>
-			</center>
-		</div>
-
-		<div id="wrapper">
-			<div id="Group">
-				<center><p>College</p></center>
-				<hr noshade></hr>
-				<a href="https://www.mycit.ie/">myCIT</a><br>
-				<a href="https://cit.instructure.com/">Canvas</a><br>
-				<a href="http://timetables.cit.ie:70/reporting/Individual;Student+Set;name;CO.SDH3-A%0D%0ACO.SDH3-B%0D%0A?weeks=&days=1-5&periods=1-40&height=100&width=100">My Timetable</a><br>
-				<a href="https://github.com/">Github</a><br>
-			</div>
-			<div id="gap"></div>
-			<div id="Group">
-				<center><p>Reddit</p></center>
-				<hr noshade></hr>
-				<a href="https://www.reddit.com/">Reddit</a><br>
-				<a href="https://www.reddit.com/r/aww/">r/awwww</a><br>
-				<a href="https://www.reddit.com/r/motorcycles/">r/motorcycles</a><br>
-				<a href="https://www.reddit.com/r/axolotls/">r/axolotls</a><br>
-				<a href="https://www.reddit.com/r/DnD/">r/DnD</a><br>
-			</div>
-			<div id="gap"></div>
-			<div id="Group">
-				<center><p>Video/Music</p></center>
-				<hr noshade></hr>
-				<a href="https://www.youtube.com/">Youtube</a><br>
-				<a href="https://www.twitch.tv/">Twitch</a><br>
-				<a href="https://mixer.com/">Mixer</a><br>
-				<a href="https://open.spotify.com/browse/featured">Spotify</a><br>
-			</div>
-		</div>
-
-		<div id="wrapper">
-			<div id="Group">
-				<center><p>Messaging/Social</p></center>
-				<hr noshade></hr>
-				<a href="https://www.messenger.com/">Messenger</a><br>
-				<a href="https://discordapp.com/channels/@me">Discord</a><br>
-				<a href="https://twitter.com/home">Twitter</a><br>
-				<a href="https://www.linkedin.com/feed/">LinkedIn</a><br>
-				<a href="https://www.instagram.com/">Instagram</a><br>
-			</div>
-			<div id="gap"></div>
-			<div id="Group">
-				<center><p>Bored</p></center>
-				<hr noshade></hr>
-				<a href="http://paper-io.com">Paper.io</a><br>
-				<a href="http://boards.4chan.org/wg">/wg</a><br>
-				<a href="http://boards.4chan.org/g">/g</a><br>
-				<a href="https://www.cardmarket.com/en/Magic">Card Market</a><br>
-			</div>
-			<div id="gap"></div>
-			<div id="Group">
-				<center><p>Other</p></center>
-				<hr noshade></hr>
-				<a href="https://www.hackthebox.eu/">HackTheBox</a><br>
-				<a href="https://dev.to/">Dev.to</a><br>
-				<a href="https://hackr.io/">Hackr.io</a><br>
-				<a href="https://file.pizza/">FilePizza</a><br>
-			</div>
-		</div>
-
-	</body>
-	<script>
-	window.onload = ( function() {
-		getDateTime();
-	})();
-
-	function getDateTime() {
-			var now = new Date();
-			var hour = now.getHours();
-			if(6 < hour && hour <= 10){
-					document.getElementById('display').innerHTML = "Good Morning";
-			}
-			else if(10 < hour && hour <= 16){
-					document.getElementById('display').innerHTML = "Good Day";
-			}
-			else if(16 < hour && hour <= 23){
-					document.getElementById('display').innerHTML = "Good Evening";
-			}
-			else {
-					document.getElementById('display').innerHTML = "Stop it! Get some sleep";
-			}
-	}
-	</script>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <style type="text/css">
+   
+  </style>
+  </head>
+  <body>
+  
+  </body>
 </html>
