@@ -3,6 +3,7 @@ body {
 	margin-bottom:0px;
 	background-image: url("image/back2.jpg");
 	background-size: cover;
+	font-family: "Lucida Console", Courier, monospace;
 }
 
 title {
