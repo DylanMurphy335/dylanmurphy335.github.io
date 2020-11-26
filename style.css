@@ -189,18 +189,18 @@ footer ul  li a {
 }
 
 #text{
-    background-color:#CCFF99;
-    display: block;
-    text-area:20;
-    font-family:'Lucida Console',cursive;
-    font-size: 20px;
-    } 
+    background-color:#CCFF99;
+    display: block;
+    text-area:20;
+    font-family:'Lucida Console',cursive;
+    font-size: 20px;
+    }
 
 #button{
-    display: fade;
-    font-weight: bold;
-    color:#FF3366;
-    }
+    display: fade;
+    font-weight: bold;
+    color:#FF3366;
+    }
 
 #contactinfo {
 	font-family: Arial, Helvetica, sans-serif;
